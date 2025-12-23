@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priya Portfolio</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" data-sidebar>
+
+    <div class="sidebar-info">
+      <figure class="avatar-box">
+        <img src="./assets/images/me.png" alt="Priya Parvathi" width="80">
+      </figure>
+
+      <div class="info-content">
+        <h1 class="name">PRIYA K</h1>
+        <p class="title">WEB DEVELOPER</p>
+      </div>
+
+      <button class="info_more-btn" data-sidebar-btn>
+        <span>Show Contacts</span>
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+    </div>
+
+    <div class="sidebar-info_more">
+      <div class="separator"></div>
+
+      <ul class="contacts-list">
+
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:priya.26csb@licet.ac.in" class="contact-link">
+            priya.26csb@licet.ac.in
+            </a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="call-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Phone</p>
+            <a href="tel:+919080714132" class="contact-link">+91 9080714132</a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+            <address>Chennai</address>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="separator"></div>
+
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://github.com/priya2217" class="social-link" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        </li>
+        <li class="social-item">
+<a href="https://www.linkedin.com/in/priya-k-497439267/" class="social-link" target="_blank">
+  <ion-icon name="logo-linkedin"></ion-icon>
+</a>
+        </li>
+      </ul>
+    </div>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+      </ul>
+    </nav>
+
+    <!-- ABOUT -->
+    <article class="about active" data-page="about">
+      <header>
+        <h2 class="h2 article-title">About Me</h2>
+      </header>
+
+      <section class="about-text">
+        <p>
+          I am a passionate Computer Engineering student with a strong interest in
+          software development, web technologies, and problem solving.
+        </p>
+        <p>
+          I enjoy building real-world applications that focus on clean design,
+          efficient code, and user-friendly experiences. I continuously work on
+          improving my technical and analytical skills.
+        </p>
+      </section>
+
+      <section class="service">
+        <h3 class="h3 service-title">What I Do</h3>
+
+        <ul class="service-list">
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="./assets/images/icon-dev.svg" width="40">
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Frontend Development</h4>
+              <p class="service-item-text">
+                Building responsive and interactive websites using HTML, CSS, and JavaScript.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="./assets/images/icon-app.svg" width="40">
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Web Applications</h4>
+              <p class="service-item-text">
+                Developing complete web applications with backend integration.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="./assets/images/icon-design.svg" width="40">
+            </div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">UI Design</h4>
+              <p class="service-item-text">
+                Designing simple, clean, and user-focused interfaces.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+
+    <!-- RESUME -->
+    <article class="resume" data-page="resume">
+      <header><h2 class="h2 article-title">Resume</h2></header>
+
+      <section class="timeline">
+  <h3 class="h3">Education</h3>
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Loyola-ICAM College of Engineering and Technology</h4>
+      <span>Nov 2022 — Present</span>
+      <p class="timeline-text">
+        BE.Computer Science and Engineering — CGPA: 7.2
+      </p>
+    </li>
+        </ol>
+      </section>
+
+      <section class="timeline">
+        <h3 class="h3">Experience</h3>
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Web Development Intern</h4>
+            <span>NEUREALM(GAVS Technologies) - 2025</span>
+            <p class="timeline-text">
+              Worked on building and maintaining web applications and collaborated with team members.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="skill">
+        <h3 class="h3 skills-title">Skills</h3>
+        <ul class="skills-list content-card">
+          <li class="skills-item">
+            <h5 class="h5">HTML, CSS, JavaScript</h5>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 85%"></div>
+            </div>
+          </li>
+
+          <li class="skills-item">
+            <h5 class="h5">React(Basic)</h5>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%"></div>
+            </div>
+          </li>
+
+          <li class="skills-item">
+            <h5 class="h5">Java / Python / C</h5>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 75%"></div>
+            </div>
+          </li>
+
+          <li class="skills-item">
+            <h5 class="h5">SQL</h5>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 75%"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+
+    <!-- PORTFOLIO -->
+    <article class="portfolio" data-page="portfolio">
+      <header><h2 class="h2 article-title">Projects</h2></header>
+
+      
+
+        <!-- Projects Container -->
+<div class="projects-container">
+
+  <!-- TrustAid Project -->
+  <div class="projects-container">
+  <!-- TrustAid Project -->
+  <div class="project-card">
+    <img src="assets/images/project-2.png" alt="TrustAid Project" class="project-image">
+    <div class="project-info">
+      <h3 class="project-title">TrustAid – Donation Platform</h3>
+      <p class="project-category">Web Application</p>
+      <p class="project-description">
+        TrustAid is a donation platform that enhances transparency by tracking donations, verifying users, and providing clear reporting between donors and beneficiaries
+      </p>
+      <a href="https://github.com/priya2217/TrustAid" target="_blank" class="btn">View on GitHub</a>
+    </div>
+  </div>
+
+  <!-- PowerRise Project -->
+  <div class="project-card">
+    <img src="assets/images/project-1.png" alt="PowerRise Project" class="project-image">
+    <div class="project-info">
+      <h3 class="project-title">PowerRise – Fitness Tracking App</h3>
+      <p class="project-category">Web Application</p>
+      <p class="project-description">
+        PowerRise is a fitness tracking web application that helps users monitor workouts, set goals, and track progress through intuitive dashboards and analytics.
+      </p>
+      <a href="https://github.com/priya2217/powerrise" target="_blank" class="btn">View on GitHub</a>
+    </div>
+  </div>
+</div>
+
+
+      </ul>
+    </article>
+
+   <!-- CONTACT -->
+<article class="contact" data-page="contact">
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+
+  <section class="contact-grid">
+
+    <a href="mailto:priya.26csb@licet.ac.in" class="contact-card">
+      <ion-icon name="mail-outline"></ion-icon>
+      <h4>Email</h4>
+      <p>priya.26csb@licet.ac.in</p>
+    </a>
+
+    <a href="tel:+919080714132" class="contact-card">
+      <ion-icon name="call-outline"></ion-icon>
+      <h4>Phone</h4>
+      <p>+91 9080714132</p>
+    </a>
+
+    <a href="https://github.com/priya2217" target="_blank" class="contact-card">
+      <ion-icon name="logo-github"></ion-icon>
+      <h4>GitHub</h4>
+      <p>github.com/priya2217</p>
+    </a>
+
+    <a href="https://www.linkedin.com/in/priya-k-497439267/" target="_blank" class="contact-card">
+      <ion-icon name="logo-linkedin"></ion-icon>
+      <h4>LinkedIn</h4>
+      <p>Connect with me</p>
+    </a>
+
+  </section>
+</article>
+
+    
+  </div>
+</section>
+
+
+  </div>
+</main>
+
+<script src="./assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
