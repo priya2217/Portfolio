@@ -20,7 +20,7 @@ me.say_hi()
 
 ## ✨ About Me
 
-🎓 Final-year **Computer Science & Engineering Student** at Loyola-Icam College of Engineering and Technology (CGPA: 7.2)
+🎓 Final-year **Computer Science & Engineering Student** at Loyola-Icam College of Engineering and Technology
 💻 Passionate about **Web Development, Software Engineering, and Emerging Technologies**
 🚀 Enjoy building **responsive, interactive, and user-friendly applications**
 
