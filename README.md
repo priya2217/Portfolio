@@ -6,8 +6,8 @@ class Developer:
     def __init__(self):
         self.name = "Priya K"
         self.role = "Software / Web Developer"
-        self.skills = ["HTML", "CSS", "JavaScript", "React", "SQL", "Python", "C", "Java"]
-        self.location = "India 🇮🇳"
+        self.skills = ["HTML", "CSS", "JavaScript", "React", "SQL", "Java", "C", "Python"]
+        self.location = "Chennai 🇮🇳"
 
     def say_hi(self):
         print("Thanks for visiting my portfolio!")
