@@ -1,6 +1,24 @@
+# 👋 Hello there! I’m **Priya K**
+
+```python
+class Developer:
+    def __init__(self):
+        self.name = "Priya K"
+        self.role = "Software / Web Developer"
+        self.skills = ["HTML", "CSS", "JavaScript", "React", "SQL", "Java", "C", "Python"]
+        self.location = "Chennai 🇮🇳"
+
+    def say_hi(self):
+        print("Thanks for visiting my portfolio!")
+
+me = Developer()
+me.say_hi()
+````
+
+---
 
 # 💫 About Me:
-👋 Hello there! I’m Priya K<br><br>🎓 Final-year Computer Science & Engineering Student at Loyola-Icam College of Engineering and Technology 💻 Passionate about Web Development, Software Engineering, and Emerging Technologies 🚀 Enjoy building responsive, interactive, and user-friendly applications
+🎓 Final-year Computer Science & Engineering Student at Loyola-Icam College of Engineering and Technology 💻 Passionate about Web Development, Software Engineering, and Emerging Technologies 🚀 Enjoy building responsive, interactive, and user-friendly applications
 
 
 ## 🌐 Socials:
