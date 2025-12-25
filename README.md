@@ -34,4 +34,16 @@ me.say_hi()
 ---
 [![](https://visitcount.itsvg.in/api?id=priya2217&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## 📫 Contact Me
+
+* 📧 Email: [priya.26csb@licet.ac.in](mailto:priya.26csb@licet.ac.in)
+* 💼 LinkedIn: [priya-k](https://www.linkedin.com/in/priya-k-497439267/)
+* 🌐 Portfolio: [Portfolio Website](https://priya2217-portfolio.netlify.app/)
+
+---
+## 🤝 Support
+
+*⭐ Star my repositories if you find them useful
+*🐛 Issues & feature requests are welcome
+
+---
