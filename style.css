@@ -319,13 +319,23 @@ article.active {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-card:hover .project-title {
-  color: #730f0f;
+.project-card .project-title {
+  color: hwb(203 0% 35% / 0.767);
+  font-size: 1.2rem;
+  font-weight: 400;
+
+
 }
-.project-card:hover .project-category {
-  color: #670a0a;
+.project-card .project-category {
+  color: #040202;
+  font-size: 1 rem;
+
+
 }
 
+.project-card:hover .project-title {
+  color: #013d5d;
+}
 
 .project-image {
   width: 100%;
@@ -337,7 +347,7 @@ article.active {
 .project-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #3f1616;
+  color: #333;
   margin-bottom: 4px;
 }
 
@@ -369,6 +379,99 @@ article.active {
   color: #983838;
 }
 
+/* ===============================
+   POWERFUL PROJECT CARD HOVER
+   =============================== */
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--eerie-black-2);
+  border-radius: 16px;
+  padding: 18px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Card lift */
+.project-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.45);
+}
+
+/* Image zoom */
+.project-image {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+/* Overlay gradient */
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.05)
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.project-card:hover::after {
+  opacity: 1;
+}
+
+/* Content stays above overlay */
+.project-info {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 12px;
+}
+
+/* Title glow */
+.project-title {
+  color: var(--white-2);
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+  color: var(--orange-yellow-crayola);
+}
+
+/* Description fade-in */
+.project-description {
+  color: var(--light-gray);
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-description {
+  opacity: 1;
+}
+
+/* Button animation */
+.project-card .btn {
+  margin-top: 12px;
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--orange-yellow-crayola);
+  color: var(--orange-yellow-crayola);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .btn {
+  background: var(--orange-yellow-crayola);
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 184, 0, 0.6);
+}
 
 
 /*-----------------------------------*\
@@ -1071,6 +1174,7 @@ main {
 .project-item > a:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
+
 }
 
 .project-item-icon-box ion-icon { --ionicon-stroke-width: 50px; }
@@ -1082,13 +1186,23 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover img { transform: scale(1.1); }
+.project-item > a:hover img { transform: scale(1.1);  color: rgb(2, 2, 86);
+ }
 
 .project-title,
 .project-category { margin-left: 10px; }
+a{
+  color: blue;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+}
 
+.project-item > a:hover{
+    color: rgb(2, 2, 86);
+
+}
 .project-title {
-  color: var(--white-2);
+  color: var(--whie-2);
   font-size: var(--fs-5);
   font-weight: var(--fw-400);
   text-transform: capitalize;
@@ -1218,7 +1332,7 @@ main {
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .me-box { border-radius: 30px; }
 
   .avatar-box img { width: 120px; }
 
@@ -1270,160 +1384,8 @@ main {
 
   .about-text { margin-bottom: 40px; }
 
-  /* service */
-
-  .service-item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 18px;
-    padding: 30px;
-  }
-
-  .service-icon-box {
-    margin-bottom: 0;
-    margin-top: 5px;
-  }
-
-  .service-content-box { text-align: left; }
-
-  /* testimonials */
-
-  .testimonials-title { margin-bottom: 25px; }
-
-  .testimonials-list {
-    gap: 30px;
-    margin: 0 -30px;
-    padding: 30px;
-    padding-bottom: 35px;
-  }
-
-  .content-card {
-    padding: 30px;
-    padding-top: 25px;
-  }
-
-  .testimonials-avatar-box {
-    transform: translate(30px, -30px);
-    border-radius: 20px;
-  }
-
-  .testimonials-avatar-box img { width: 80px; }
-
-  .testimonials-item-title {
-    margin-bottom: 10px;
-    margin-left: 95px;
-  }
-
-  .testimonials-text {
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
-  }
-
-  /* testimonials modal */
-
-  .modal-container { padding: 20px; }
-
-  .testimonials-modal {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 25px;
-    padding: 30px;
-    border-radius: 20px;
-  }
-
-  .modal-img-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .modal-avatar-box {
-    border-radius: 18px;
-    margin-bottom: 0;
-  }
-
-  .modal-avatar-box img { width: 65px; }
-
-  .modal-img-wrapper > img {
-    display: block;
-    flex-grow: 1;
-    width: 35px;
-  }
-
-  /* clients */
-
-  .clients-list {
-    gap: 50px;
-    margin: 0 -30px;
-    padding: 45px;
-    scroll-padding-inline: 45px;
-  }
-
-  .clients-item { min-width: calc(33.33% - 35px); }
-
-
-
-  /**
-   * #RESUME
-   */
-
-  .timeline-list { margin-left: 65px; }
-
-  .timeline-item:not(:last-child)::before { left: -40px; }
-
-  .timeline-item::after {
-    height: 8px;
-    width: 8px;
-    left: -43px;
-  }
-
-  .skills-item:not(:last-child) { margin-bottom: 25px; }
-
-
-
-  /**
-   * #PORTFOLIO, BLOG
-   */
-
-  .project-img, .blog-banner-box { border-radius: 16px; }
-
-  .blog-posts-list { gap: 30px; }
-
-  .blog-content { padding: 25px; }
-
-
-
-  /**
-   * #CONTACT
-   */
-
-  .mapbox {
-    height: 380px;
-    border-radius: 18px;
-  }
-
-  .input-wrapper {
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-
-  .form-input { padding: 15px 20px; }
-
-  textarea.form-input { margin-bottom: 30px; }
-
-  .form-btn {
-    --fs-6: 16px;
-    padding: 16px 20px;
-  }
-
-  .form-btn ion-icon { font-size: 18px; }
-
-}
-
-
-
+ 
+  
 
 
 /**
@@ -1461,23 +1423,14 @@ main {
 
 
 
-  /**
-   * ABOUT
-   */
 
-  /* testimonials modal */
+  
 
-  .testimonials-modal {
-    gap: 35px;
-    max-width: 680px;
-  }
-
-  .modal-avatar-box img { width: 80px; }
-
+  
 
 
   /**
-   * PORTFOLIO
+   * projects
    */
 
   .article-title { padding-bottom: 20px; }
@@ -1856,4 +1809,5 @@ main {
 .contact-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 30px rgba(255, 184, 0, 0.2);
+}
 }
